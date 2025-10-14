@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kost Kita</title>
+    <link rel="stylesheet" href="../../assets/css/cssdashboard/dashboard.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="../../assets/img/LOGO KOST KITA.png" />
+      </div>
+      <div class="right-menu">
+        <nav class="navbar">
+          <a href="../dashboard/dashboard.html">Beranda</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#hubungi">Hubungi Kami</a>
+          <a href="../dashboard/daftarsebagai.html" class="login-btn">Masuk</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+      <div class="slider">
+        <img src="../../assets/img/images2.jpeg" alt="Kost 1" class="active" />
+        <img src="../../assets/img/images1.jpg" alt="Kost 2" />
+        <img src="../../assets/img/images2.jpeg" alt="Kost 3" />
+
+        <!-- Indikator (dot) -->
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <script src="../../js/dashboard/dashboard.js"></script>
+
+    <!-- Tombol Cari Kost (di luar hero) -->
+    <div class="search-container" onclick="goToDaftar(1)">
+      <input
+        type="text"
+        class="search-box"
+        placeholder="Masukkan nama kost atau lokasi kost"
+      />
+      <button class="search-btn">Cari Kost</button>
+    </div>
+
+    <!-- Kost Terbaru -->
+    <section class="section">
+      <h2>KOST TERBARU</h2>
+
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card" onclick="goToDaftar(1)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Putri</h3>
+              <span class="location">Karangklesem, PWT Selatan</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 800.000 / Bulan</span>
+              <span class="availability">sisa 8 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" onclick="goToDaftar(2)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Rumah Kost Ummi</h3>
+              <span class="location">Purwokerto Timur</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 650.000 / Bulan</span>
+              <span class="availability">sisa 5 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" onclick="goToDaftar(3)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Eksklusif</h3>
+              <span class="location">Karangwangkal</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 1.200.000 / Bulan</span>
+              <span class="availability">sisa 2 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" onclick="goToDaftar(4)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Murah</h3>
+              <span class="location">Purwokerto Selatan</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 500.000 / Bulan</span>
+              <span class="availability">sisa 10 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card" onclick="goToDaftar(5)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Mawar</h3>
+              <span class="location">Bancarkembar</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 700.000 / Bulan</span>
+              <span class="availability">sisa 6 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" onclick="goToDaftar(6)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Putra Harmoni</h3>
+              <span class="location">PWT Utara</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 550.000 / Bulan</span>
+              <span class="availability">sisa 4 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card" onclick="goToDaftar(7)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Melati</h3>
+              <span class="location">Grendeng</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 900.000 / Bulan</span>
+              <span class="availability">sisa 3 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card" onclick="goToDaftar(8)">
+          <img src="../../assets/img/images1.jpg" alt="" />
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Kost Sejahtera</h3>
+              <span class="location">Arcawinangun</span>
+            </div>
+            <div class="card-footer">
+              <span class="price">Rp. 1.000.000 / Bulan</span>
+              <span class="availability">sisa 7 kamar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card-container -->
+
+      <!-- Tombol lihat selengkapnya -->
+      <div class="more-link">
+        <a href="daftarsebagai.html" class="btn-link">Lihat Selengkapnya</a>
+      </div>
+    </section>
+
+    <!-- Rekomendasi Kost -->
+    <section class="section1">
+      <h2>REKOMENDASI KOST</h2>
+
+      <div class="card-container1">
+        <!-- Card 1 -->
+        <div class="card1" onclick="goToDaftar(1)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri A</h3>
+              <span class="location1">Karangklesem, PWT Selatan</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 800.000 / Bulan</span>
+              <span class="availability1">sisa 8 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card1" onclick="goToDaftar(2)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri B</h3>
+              <span class="location1">Arcawinangun, PWT Timur</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 750.000 / Bulan</span>
+              <span class="availability1">sisa 5 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card1" onclick="goToDaftar(3)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri C</h3>
+              <span class="location1">Berkoh, PWT Selatan</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 900.000 / Bulan</span>
+              <span class="availability1">sisa 2 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card1" onclick="goToDaftar(4)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri D</h3>
+              <span class="location1">Kober, PWT Barat</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 650.000 / Bulan</span>
+              <span class="availability1">sisa 6 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card1" onclick="goToDaftar(5)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri E</h3>
+              <span class="location1">Purwokerto Kulon</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 850.000 / Bulan</span>
+              <span class="availability1">sisa 4 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card1" onclick="goToDaftar(6)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri F</h3>
+              <span class="location1">Grendeng, PWT Utara</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 950.000 / Bulan</span>
+              <span class="availability1">sisa 3 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card1" onclick="goToDaftar(7)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri G</h3>
+              <span class="location1">Banyumas Kota</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 700.000 / Bulan</span>
+              <span class="availability1">sisa 10 kamar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card1" onclick="goToDaftar(8)">
+          <img src="../../assets/img/images1.jpg" alt="Kost Putri" />
+          <div class="card-body1">
+            <div class="card-header1">
+              <h3>Kost Putri H</h3>
+              <span class="location1">Karangwangkal, PWT Utara</span>
+            </div>
+            <div class="card-footer1">
+              <span class="price1">Rp. 1.000.000 / Bulan</span>
+              <span class="availability1">sisa 1 kamar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end card-container -->
+
+      <!-- Tombol lihat selengkapnya -->
+      <div class="more-link1">
+        <a href="daftarsebagai.html" class="btn-link1">Lihat Selengkapnya</a>
+      </div>
+    </section>
+
+    <!-- Kampus Sekitar -->
+    <section class="section2">
+      <h2>AREA KOST</h2>
+
+      <div class="card-container2">
+        <!-- Card 1 -->
+        <div class="card2" onclick="goToDaftar(1)">
+          <img src="../../assets/img/logo1.png" alt="Unsoed" class="logo" />
+          <h3>Universitas Jenderal Soedirman</h3>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card2" onclick="goToDaftar(2)">
+          <img src="../../assets/img/logo1.png" alt="UGM" class="logo" />
+          <h3>Universitas Gadjah Mada</h3>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card2" onclick="goToDaftar(3)">
+          <img src="../../assets/img/logo1.png" alt="UI" class="logo" />
+          <h3>Universitas Indonesia</h3>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card2" onclick="goToDaftar(4)">
+          <img src="../../assets/img/logo1.png" alt="ITB" class="logo" />
+          <h3>Institut Teknologi Bandung</h3>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card2" onclick="goToDaftar(5)">
+          <img src="../../assets/img/logo1.png" alt="ITS" class="logo" />
+          <h3>Institut Teknologi Sepuluh Nopember</h3>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card2" onclick="goToDaftar(6)">
+          <img src="../../assets/img/logo1.png" alt="Undip" class="logo" />
+          <h3>Universitas Diponegoro</h3>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card2" onclick="goToDaftar(7)">
+          <img src="../../assets/img/logo1.png" alt="Amikom" class="logo" />
+          <h3>Universitas Amikom Yogyakarta</h3>
+        </div>
+
+        <!-- Card terakhir -->
+        <div class="kampus-item lihat-semua" onclick="goToDaftar(8)">
+          <p>Lihat Semua</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="tentang">
+      <h2>Cari Kost Sekitar Purwokerto hanya di Kost Kita</h2>
+      <p>
+        KostKita adalah platform yang menyajikan informasi mengenai kost yang
+        disewakan di daerah Purwokerto. Platform ini dilengkapi dengan informasi
+        harga kost, fasilitas kost, dan foto kost yang diunggah langsung oleh
+        pemilik kost, sehingga memudahkan pencari kost dalam menemukan tempat
+        tinggal yang sesuai di Purwokerto.
+      </p>
+      <p>
+        Kemudahan-kemudahan yang kami sediakan mencakup filter pencarian
+        berdasarkan harga, lokasi, jenis kost (putra, putri, atau campuran),
+        fasilitas tambahan, dan jam bertamu. Fitur ini dirancang untuk
+        memudahkan pengguna menemukan kost yang sesuai dengan kebutuhan dan
+        budget mereka dengan cepat.
+      </p>
+      <p>
+        Selain itu, semua informasi kost yang ada di KostKita telah
+        terverifikasi, memberikan rasa aman bagi para pencari kost. Kami
+        memastikan transaksi antara pemilik kost dan penyewa berjalan dengan
+        aman dan transparan.
+      </p>
+      <p>
+        KostKita hadir untuk membantu Anda menemukan pilihan kost terbaik, mulai
+        dari kost eksklusif hingga kost sederhana, di berbagai area di
+        Purwokerto, seperti kost di pusat kota, dekat universitas, dan di
+        sekitar area strategis lainnya.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer id="hubungi">
+      <div class="footer-container">
+        <div class="footer-box">
+          <h3>Kost Kita</h3>
+          <p>Temukan kost terbaik dengan mudah, cepat, dan terpercaya.</p>
+          <div class="footer-social">
+            <a href="https://facebook.com" target="_blank">
+              <img src="../../assets/img/logofacebook.png" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="../../assets/img/logoinstagram.png" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="../../assets/img/logox.png" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-box">
+          <h3>KOST KITA</h3>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Pusat Bantuan</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>KEBIJAKAN</h3>
+          <ul>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Syarat dan Ketentuan Umum</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-box">
+          <h3>Hubungi Kami</h3>
+          <p>
+            <a href="mailto:admin@gmail.com" class="contact-link">
+              <img
+                src="../../assets/img/logoemail.png"
+                alt="Email"
+                class="icon"
+              />
+              admin@gmail.com
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://wa.me/628123456789"
+              target="_blank"
+              class="contact-link"
+            >
+              <img
+                src="../../assets/img/logowa.png"
+                alt="WhatsApp"
+                class="icon"
+              />
+              08123456789
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kost Kita. Semua hak dilindungi undang-undang.</p>
+      </div>
+    </footer>
+
+    <script>
+      function goToDaftar(id) {
+        window.location.href = "daftarsebagai.html?id=" + id;
+      }
+    </script>
+  </body>
+</html>

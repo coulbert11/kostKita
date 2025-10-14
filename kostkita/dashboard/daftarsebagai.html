@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Sebagai</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/css/cssdashboard/daftarsebagai.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Panel kiri -->
+      <div class="left-panel">
+        <h1>Selamat Datang di Kost Kita!</h1>
+        <p>Pilih peranmu untuk melanjutkan pendaftaran atau login.</p>
+        <a href="https://wa.me/628123456789" target="_blank" class="help-btn"
+          >Hubungi Admin</a
+        >
+      </div>
+
+      <!-- Panel kanan -->
+      <div class="right-panel">
+        <div class="form-box">
+          <h2>Daftar Sebagai</h2>
+          <form class="role-form" onsubmit="return goToLogin()">
+            <label class="option">
+              <input type="radio" name="role" value="pengguna" required />
+              <span>👤 Pengguna</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="role" value="pemilik" required />
+              <span>🏠 Pemilik Kost</span>
+            </label>
+
+            <button type="submit" class="btn-lanjut">Lanjutkan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/dashboard/daftarsebagai.js"></script>
+  </body>
+</html>

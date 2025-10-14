@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubungi Kami - Kost Kita</title>
+    <link rel="stylesheet" href="../../assets/css/cssprofil/bantuan.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="../../assets/img/logokostkita.png" />
+      </div>
+      <div class="right-menu">
+        <nav class="navbar">
+          <a href="../dashboard2/dashboard.html">Beranda</a>
+          <a href="#">Tentang</a>
+          <a href="hubungi.html" class="active">Hubungi Kami</a>
+        </nav>
+        <div class="dropdown">
+          <button class="dropbtn">Hallo, Bernadya</button>
+          <div class="dropdown-content">
+            <a href="profil.html">Profil</a>
+            <a href="riwayat.html">Riwayat Pemesanan</a>
+            <a href="syarat.html">Syarat dan Ketentuan</a>
+            <a href="bantuan.html">Bantuan</a>
+            <a href="../kostkita/dashboard/dashboard.html">Keluar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten Hubungi Kami -->
+    <main class="contact-wrapper">
+      <div class="contact-card">
+        <!-- Kiri -->
+        <div class="contact-info">
+          <h2>Butuh Bantuan?</h2>
+          <p>
+            Santuy aja! Kita ngerti kok, hidup anak kos kadang penuh drama:
+            mulai dari WiFi ngambek, galon habis, sampe lupa password akun
+            sendiri. Nah, biar nggak tambah drama, tim Kost Kita siap jadi
+            partner setia kamu.
+          </p>
+        </div>
+
+        <!-- Kanan -->
+        <form class="contact-form">
+          <h2>Hubungi Kami</h2>
+
+          <label for="subyek">Subyek</label>
+          <input type="text" id="subyek" placeholder="Tulis subyek pesan..." />
+
+          <label for="deskripsi">Deskripsi</label>
+          <textarea
+            id="deskripsi"
+            rows="6"
+            placeholder="Tuliskan pesan atau kendala Anda di sini..."
+          ></textarea>
+
+          <button type="submit" class="btn-kirim">Kirim</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

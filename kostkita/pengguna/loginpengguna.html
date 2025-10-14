@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk ke Kost Kita</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/css/csspengguna/loginpengguna.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Panel kiri -->
+      <div class="left-panel">
+        <h1>Selamat Datang di Kost Kita!</h1>
+        <p>Masuk untuk melanjutkan pencarian atau kelola kost-mu</p>
+        <a href="https://wa.me/628123456789" target="_blank" class="btn-help"
+          >Hubungi Admin</a
+        >
+      </div>
+
+      <!-- Panel kanan -->
+      <div class="right-panel">
+        <h2>Masuk ke kost kita</h2>
+
+        <!-- Form -->
+        <form id="loginForm">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan E-mail"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan Password"
+            required
+          />
+
+          <div class="options">
+            <label class="ingat">
+              <input type="checkbox" id="rememberMe" /> Ingat Saya
+            </label>
+            <a href="lupapasswordpengguna.html" class="forgot"
+              >Lupa Password?</a
+            >
+          </div>
+
+          <button type="submit" class="btn-login">Masuk</button>
+
+          <!-- Tempat pesan error -->
+          <p id="errorMsg"></p>
+
+          <p class="signup">
+            Belum punya akun? <a href="daftarpengguna.html">Daftar disini</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Hubungkan file JS -->
+    <script src="../../js/pengguna/loginpengguna.js"></script>
+  </body>
+</html>

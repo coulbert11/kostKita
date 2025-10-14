@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran Transfer - Kost Kita</title>
+    <link rel="stylesheet" href="../../assets/css/cssdashboard2/bayar2.css" />
+  </head>
+  <body>
+    <!-- HEADER (tidak diubah) -->
+    <header>
+      <div class="logo">
+        <img src="../../assets/img/logokostkita.png" />
+      </div>
+      <div class="right-menu">
+        <nav class="navbar">
+          <a href="../dashboard2/dashboard.html">Beranda</a>
+          <a href="#">Tentang</a>
+          <a href="#">Hubungi Kami</a>
+        </nav>
+        <div class="dropdown">
+          <button class="dropbtn">Hallo, Bernadya</button>
+          <div class="dropdown-content">
+            <a href="../profil/profil.html">Profil</a>
+            <a href="../profil/riwayat.html">Riwayat Pemesanan</a>
+            <a href="../profil/syarat.html">Syarat dan Ketentuan</a>
+            <a href="../profil/bantuan.html">Bantuan</a>
+            <a href="../dashboard/dashboard.html">Keluar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten -->
+    <section class="sewa-container">
+      <!-- Kiri -->
+      <div class="sewa-left">
+        <h2>Mohon Transfer ke</h2>
+
+        <div class="transfer-box">
+          <div class="transfer-row">
+            <span><strong>Bank Mandiri</strong></span>
+            <img src="../../assets/img/logomandiri.png" alt="Mandiri" />
+          </div>
+          <div class="transfer-row">
+            <span>Nomor Rekening:</span>
+            <span>084 999 7777 <button class="btn-salin">Salin</button></span>
+          </div>
+          <div class="transfer-row">
+            <span>Nama Penerima:</span>
+            <span>PT. Kita Kost</span>
+          </div>
+          <div class="transfer-row">
+            <span>Jumlah Transfer:</span>
+            <span>Rp 820.000 <button class="btn-salin">Salin</button></span>
+          </div>
+        </div>
+
+        <p class="warning">
+          <strong>PENTING!</strong> Mohon transfer sampai 3 digit terakhir
+        </p>
+
+        <h3>Sudah selesai bayar?</h3>
+        <div class="konfirmasi-box">
+          <p>
+            Kalau pembayaran Anda telah dikonfirmasi, kami akan mengirimkan
+            e-ticket dan bukti pembayaranmu ke email Anda.
+          </p>
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn-kembali"
+              onclick="window.location.href='bayar.html'"
+            >
+              Kembali
+            </button>
+            <button
+              type="button"
+              class="btn-bayar"
+              onclick="window.location.href='../../kostkita/profil/riwayat.html'"
+            >
+              Ya, Saya sudah bayar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kanan -->
+      <div class="sewa-right">
+        <div class="kost-info">
+          <h3>Rumah Kost Ummi</h3>
+          <p><strong>Kost Putri</strong></p>
+          <p class="address">
+            📍 Jl. Karangklesem No.2 Windusara, Karangklesem, Kec. Purwokerto
+            Sel., Kabupaten Banyumas, Jawa Tengah 53144
+          </p>
+          <img src="../../assets/img/images1.jpg" alt="Kamar Kost" />
+
+          <p>(1x) Single Bed</p>
+          <h4>Fasilitas Kamar</h4>
+          <ul>
+            <li>Tempat tidur + kasur</li>
+            <li>Lemari pakaian</li>
+            <li>Meja dan kursi belajar</li>
+            <li>Kipas angin / AC</li>
+            <li>Jendela / ventilasi</li>
+            <li>Colokan listrik</li>
+          </ul>
+
+          <h4>Fasilitas Kamar Mandi</h4>
+          <ul>
+            <li>Kamar mandi dalam</li>
+            <li>Bak mandi</li>
+            <li>WC duduk</li>
+          </ul>
+
+          <h4>Fasilitas Umum</h4>
+          <ul>
+            <li>Dapur bersama</li>
+            <li>Ruang tamu</li>
+            <li>Tempat cuci dan jemuran</li>
+            <li>Parkiran motor / mobil</li>
+            <li>Akses WiFi</li>
+            <li>CCTV</li>
+            <li>TV bersama</li>
+            <li>Kulkas bersama</li>
+          </ul>
+
+          <h4>Rincian Kamar</h4>
+          <p>• Nomor 1<br />• Tipe single bed</p>
+
+          <h4>Data Penyewa</h4>
+          <p>👤 Bernadya Ribka</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

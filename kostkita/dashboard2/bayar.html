@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembayaran Kost - Kost Kita</title>
+    <link rel="stylesheet" href="../../assets/css/cssdashboard2/bayar.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="../../assets/img/logokostkita.png" />
+      </div>
+      <div class="right-menu">
+        <nav class="navbar">
+          <a href="../dashboard2/dashboard.html">Beranda</a>
+          <a href="#">Tentang</a>
+          <a href="#">Hubungi Kami</a>
+        </nav>
+        <div class="dropdown">
+          <button class="dropbtn">Hallo, Bernadya</button>
+          <div class="dropdown-content">
+            <a href="../profil/profil.html">Profil</a>
+            <a href="../profil/riwayat.html">Riwayat Pemesanan</a>
+            <a href="../profil/syarat.html">Syarat dan Ketentuan</a>
+            <a href="../profil/bantuan.html">Bantuan</a>
+            <a href="../dashboard/dashboard.html">Keluar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Konten -->
+    <section class="sewa-container">
+      <!-- Bagian kiri -->
+      <div class="sewa-left">
+        <h2>Pembayaran Kamar Kost</h2>
+
+        <h3>Transfer Bank</h3>
+        <p>
+          Anda dapat melakukan transfer melalui Mobile Banking, Internet
+          Banking, atau ATM.
+        </p>
+        <p>Silakan pilih rekening tujuan dan periksa total harga.</p>
+
+        <!-- Pilih bank -->
+        <form class="form-bayar">
+          <label>
+            <div class="bank-left">
+              <input type="radio" name="bank" value="mandiri" checked />
+              <span>MANDIRI</span>
+            </div>
+            <img src="../../assets/img/logomandiri.png" alt="Mandiri" />
+          </label>
+
+          <label>
+            <div class="bank-left">
+              <input type="radio" name="bank" value="bca" />
+              <span>BCA</span>
+            </div>
+            <img src="../../assets/img/logobca.png" alt="BCA" />
+          </label>
+
+          <label>
+            <div class="bank-left">
+              <input type="radio" name="bank" value="bni" />
+              <span>BNI</span>
+            </div>
+            <img src="../../assets/img/logobni.png" alt="BNI" />
+          </label>
+
+          <label>
+            <div class="bank-left">
+              <input type="radio" name="bank" value="bri" />
+              <span>BRI</span>
+            </div>
+            <img src="../../assets/img/logobri.png" alt="BRI" />
+          </label>
+
+          <label>
+            <div class="bank-left">
+              <input type="radio" name="bank" value="lainnya" />
+              <span>Bank Lainnya</span>
+            </div>
+            <img src="../../assets/img/logoatmbersama.png" alt="ATM Bersama" />
+          </label>
+
+          <!-- Total harga -->
+          <div class="rincian-harga">
+            <span><strong>Total Harga</strong></span>
+            <span class="harga">Rp 820.000</span>
+          </div>
+
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn-kembali"
+              onclick="window.location.href='sewa.html'"
+            >
+              Kembali
+            </button>
+            <button
+              type="button"
+              class="btn-bayar"
+              onclick="window.location.href='bayar2.html'"
+            >
+              Bayar dengan Transfer Mandiri
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Bagian kanan -->
+      <div class="sewa-right">
+        <div class="kost-info">
+          <h3>Rumah Kost Ummi</h3>
+          <p><strong>Kost Putri</strong></p>
+          <p class="address">
+            📍 Jl. Karangklesem No.2 Windusara, Karangklesem, Kec. Purwokerto
+            Sel., Kabupaten Banyumas, Jawa Tengah 53144
+          </p>
+          <img src="../../assets/img/images1.jpg" alt="Kamar Kost" />
+
+          <p>(1x) Single Bed</p>
+          <h4>Fasilitas Kamar</h4>
+          <ul>
+            <li>Tempat tidur + kasur</li>
+            <li>Lemari pakaian</li>
+            <li>Meja dan kursi belajar</li>
+            <li>Kipas angin / AC</li>
+            <li>Jendela / ventilasi</li>
+            <li>Colokan listrik</li>
+          </ul>
+
+          <h4>Fasilitas Kamar Mandi</h4>
+          <ul>
+            <li>Kamar mandi dalam</li>
+            <li>Bak mandi</li>
+            <li>WC duduk</li>
+          </ul>
+
+          <h4>Fasilitas Umum</h4>
+          <ul>
+            <li>Dapur bersama</li>
+            <li>Ruang tamu</li>
+            <li>Tempat cuci dan jemuran</li>
+            <li>Parkiran motor / mobil</li>
+            <li>Akses WiFi</li>
+            <li>CCTV</li>
+            <li>TV bersama</li>
+            <li>Kulkas bersama</li>
+          </ul>
+
+          <h4>Rincian Kamar</h4>
+          <p>• Nomor 1<br />• Tipe single bed</p>
+
+          <h4>Data Penyewa</h4>
+          <p>👤 Bernadya Ribka</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Pengguna - Kost Kita</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/css/csspengguna/daftarpengguna.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Panel kiri -->
+      <div class="left-panel">
+        <h1>Bergabung dengan Kost Kita!</h1>
+        <p>Buat akun sekarang untuk mulai mencari atau mengelola kost.</p>
+        <a href="https://wa.me/628123456789" target="_blank" class="btn-help"
+          >Hubungi Admin</a
+        >
+      </div>
+
+      <!-- Panel kanan -->
+      <div class="right-panel">
+        <h2>Daftar di Kost Kita</h2>
+
+        <!-- Tempat notifikasi error -->
+        <p id="errorMsg" class="notif-error"></p>
+        <!-- Tempat notifikasi sukses -->
+        <p id="notifSuccess" class="notif-success"></p>
+
+        <!-- Form -->
+        <form id="registerForm">
+          <label for="nama">Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            placeholder="Masukkan Nama Lengkap"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan E-mail"
+            required
+          />
+
+          <label for="nohp">No. HP</label>
+          <input
+            type="tel"
+            id="nohp"
+            placeholder="Masukkan No. HP"
+            pattern="[0-9]+"
+            maxlength="15"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan Password"
+            required
+          />
+
+          <label for="ulangipassword">Ulangi Password</label>
+          <input
+            type="password"
+            id="ulangipassword"
+            placeholder="Ulangi Password"
+            required
+          />
+
+          <button type="submit" class="btn-daftar">Daftar</button>
+
+          <p class="login">
+            Sudah punya akun? <a href="loginpengguna.html">Masuk di sini</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="../../js/pengguna/daftarpengguna.js"></script>
+  </body>
+</html>

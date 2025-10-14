@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Kost - Kost Kita</title>
+    <link
+      rel="stylesheet"
+      href="../../assets/css/cssdashboard2/detailkost.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="../../assets/img/logokostkita.png" />
+      </div>
+      <div class="right-menu">
+        <nav class="navbar">
+          <a href="../dashboard2/dashboard.html">Beranda</a>
+          <a href="#">Tentang</a>
+          <a href="#">Hubungi Kami</a>
+        </nav>
+        <!-- Ganti link Hallo Bernadya -->
+        <div class="dropdown">
+          <button class="dropbtn">Hallo, Bernadya</button>
+          <div class="dropdown-content">
+            <a href="../profil/profil.html">Profil</a>
+            <a href="../profil/riwayat.html">Riwayat Pemesanan</a>
+            <a href="../profil/syarat.html">Syarat dan Ketentuan</a>
+            <a href="../profil/bantuan.html">Bantuan</a>
+            <a href="../dashboard/dashboard.html">Keluar</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Detail Kost -->
+    <section class="detail-container">
+      <!-- Bagian Kiri -->
+      <div class="detail-left">
+        <h2>Rumah Kost Ummi</h2>
+        <p>
+          <strong>Kost Putri</strong> | Rp. 800.000 / Bulan |
+          <span class="availability">sisa 8 kamar</span>
+        </p>
+        <p class="address">
+          📍 Karangklesem No 12 Wirokaras, Karangklesem, Kec. Purwokerto Sel.,
+          Kabupaten Banyumas, Jawa Tengah 53144
+        </p>
+
+        <!-- Foto Utama -->
+        <img src="../../assets/img/images1.jpg" alt="Kamar" class="main-img" />
+
+        <!-- Foto Lain -->
+        <div class="thumbs">
+          <img src="../../assets/img/images1.jpg" alt="Kamar Mandi 1" />
+
+          <!-- Foto terakhir ada overlay -->
+          <div class="thumb with-overlay">
+            <img src="../../assets/img/images1.jpg" alt="Kamar Mandi 2" />
+            <div class="overlay">
+              <span>Lihat Selengkapnya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bagian Kanan -->
+      <div class="detail-right">
+        <h3>Deskripsi Kost</h3>
+        <p>Luas Kamar: 3m x 4m</p>
+
+        <h3>Fasilitas Kamar</h3>
+        <ul>
+          <li>Tempat tidur + kasur</li>
+          <li>Lemari pakaian</li>
+          <li>Meja dan kursi belajar</li>
+          <li>Kipas angin / AC</li>
+          <li>Colokan listrik</li>
+        </ul>
+
+        <h3>Fasilitas Kamar Mandi</h3>
+        <ul>
+          <li>Kamar mandi dalam</li>
+          <li>Shower</li>
+          <li>WC duduk</li>
+        </ul>
+
+        <h3>Fasilitas Umum</h3>
+        <ul>
+          <li>Ruang tamu</li>
+          <li>Dapur bersama</li>
+          <li>Parkir motor / mobil</li>
+          <li>Internet (WiFi)</li>
+          <li>TV bersama</li>
+          <li>Kulkas bersama</li>
+        </ul>
+
+        <button class="btn-owner">Hubungi Pemilik</button>
+        <button class="btn-sewa">SEWA</button>
+      </div>
+    </section>
+    <!-- Panggil file JS -->
+    <script src="../../js/dashboard2/detailkost.js"></script>
+  </body>
+</html>
