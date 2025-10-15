@@ -1,0 +1,149 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Layout dasar */
+body {
+  display: flex;
+  height: 100vh;
+  background: #f5f7fa;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  display: flex;
+  width: 900px;
+  height: 520px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Panel kiri */
+.left-panel {
+  flex: 1;
+  background: linear-gradient(135deg, #0eaacd);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.left-panel h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.left-panel p {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.help-btn {
+  padding: 10px 25px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.help-btn:hover {
+  background: white;
+  color: #00809d;
+}
+
+/* Panel kanan */
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Opsi radio */
+.role-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  position: relative;
+}
+
+.option input {
+  display: none;
+}
+
+.option span {
+  display: block;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  background: #f9f9f9;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.option:hover span {
+  background: #f0f8ff;
+  border-color: #00809d;
+}
+
+.option input:checked + span {
+  background: linear-gradient(135deg, #00809d);
+  color: white;
+  border-color: #0eaacd;
+  font-weight: 600;
+  transform: scale(1.02);
+}
+
+/* Tombol lanjut */
+.btn-lanjut {
+  margin-top: 25px;
+  padding: 14px;
+  background: linear-gradient(135deg, #00809d);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-lanjut:hover {
+  background: linear-gradient(135deg, #0eaacd);
+}
